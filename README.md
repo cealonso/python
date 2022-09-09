@@ -12,4 +12,4 @@ Realizar un programa de logística que permita almacenar:
     buses=100
     space_in_a_bus=20
     count_persons_seats=buses*space_in_a_bus
-    print(" Cabtidad total de personas por micro es:", count_persons_seats)
+    print(" Cantidad total de personas por micro es:", count_persons_seats)
