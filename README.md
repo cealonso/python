@@ -24,7 +24,7 @@ Analice la siguiente situación: Se lleno por error el vaso de Nicolás con gase
     print("El vaso de Nico tiene: ", vaso_nico)
     print("El vaso de Juliana tiene: ", vaso_juliana)
 
-Realizar una calcular que permita sumar dos números dados por teclado:
+Realizar una calculadora que permita sumar dos números dados por teclado. Al finalizar el proceso imprimir el resultado de dicha suma.
 
     value1 = int(input('Enter first number: '))
     value2 = int(input('Enter second number: '))
