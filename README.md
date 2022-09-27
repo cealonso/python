@@ -35,12 +35,12 @@ Realizar una calculadora que permita sumar dos números dados por teclado. Al fi
 
 Programar un to-do list (Lista de cosas para hacer) que permita agregar tareas a una lista y a un archivo simuláaneamente. La cantidad de eventos a cargar se solicitará al usuario antes de proceder a la carga de la información. Por cada nuevo evento se debe cargar su descripción y se deberá almacenar en una nueva linea del archivo. Toda la información debe ser almacenada en un archivo denominado todo.txt almacenado en el mismo lugar donde se encuentra la aplicación.
 
-   tasks=[]
-   count=int(input("La cantidad de Eventos que quiero agendar : "))
-   file=open("tareas.txt","w",encoding="utf8")
-   for i in range(count):
-   new_element=input("Que querés agendar? : ") #Se repite las count veces
-   tasks.append(new_element)
-   file.write(new_element+'\n')
-   print(tasks)
-   file.close()
+  tasks=[]
+  count=int(input("La cantidad de Eventos que quiero agendar : "))
+  file=open("tareas.txt","w",encoding="utf8")
+  for i in range(count):
+      new_element=input("Que querés agendar? : ") #Se repite las count veces
+      tasks.append(new_element)
+      file.write(new_element+'\n')
+ print(tasks)
+ file.close()
