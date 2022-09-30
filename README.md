@@ -46,3 +46,20 @@ Programar un to-do list (Lista de cosas para hacer) que permita agregar tareas a
     file.close()
     
 Programar un to-do list (Lista de cosas para hacer) que permita agregar tareas a una lista y a un archivo simultáneamente. La cantidad de eventos a cargar se solicitará al usuario antes de proceder a la carga de la información. La aplicación debe mostrar su número de versión al ejecutarse por primera vez. Por cada nuevo evento se debe cargar su descripción, un color dependiendo de su prioridad (Rojo: Importante, Amarillo: Prioridad intermedia, Verde: Baja Prioridad). En el momento de cargar la prioridad se debe informar por pantalla los colores que puede completar el usuario para que ingrese correctamente la prioridad. La información sobre la prioridad no se debe agregar a la lista. Se debe generar un Id único correlativo para cada evento (ese id debe comenzar con el numero 1). También se debe almacenar la fecha de comienzo de la tarea y la fecha de finalización. La información sobre el id debe ser agregada al comienzo de la lista (Ejemplo: “1 Desayunar”), las fechas de comienzo y finalización no se deben agregar a la lista. Toda la información debe ser almacenada en un archivo denominado todo.txt almacenado en el mismo lugar donde se encuentra la app.  Cada información ingresada debe separarse en el archivo mediante una tabulación para mejorar la visualización cuando deba ser leído. 
+
+
+    tasks=[]
+    print ("Software TO-DO LIST v1.0")
+    count=int(input("La cantidad de Eventos que quiero agendar : "))
+    file=open("todo.txt","w",encoding="utf8")
+    aux=0
+    for i in range(count):
+        aux=aux+1
+        new_element=input("Que querés agendar? : ") #Se repite las count veces
+        priority=input("Deme la prioridad (Rojo: Importante, Amarillo: Prioridad intermedia, Verde: Baja Prioridad)")
+        date_start=input("Fecha de Comienzo")
+        date_end=input("Fecha de Finalización")
+        tasks.append(str(aux)+" "+new_element)
+        file.write(str(aux)+"\t"+new_element+"\t"+priority+"\t"+date_start+"\t"+date_end+"\t"+'\n')
+    print(tasks)
+    file.close()
