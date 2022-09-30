@@ -63,3 +63,11 @@ Programar un to-do list (Lista de cosas para hacer) que permita agregar tareas a
         file.write(str(aux)+"\t"+new_element+"\t"+priority+"\t"+date_start+"\t"+date_end+"\t"+'\n')
     print(tasks)
     file.close()
+
+Realizar un ejercicio que indique si una persona tiene o no fiebre basado en su temperatura corporal.
+
+    degree=float(input("Decime la temperatura : "))
+    if degree>=37:
+        print ("Tenés fiebre")
+    else:
+        print ("No pasa nada quédate tranquilo")
